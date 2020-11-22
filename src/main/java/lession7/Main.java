@@ -17,6 +17,7 @@ public class Main {
         System.out.println("Сколько грамм корма насыпать в миску? \nМинимальная потребность кота 100 грамм.");
 
         Plate plate = new Plate(scanner.nextInt());
+
         do {
             plate.info();
             for (Cat allCat : allCats) {
@@ -36,6 +37,7 @@ public class Main {
             feed = scanner.nextInt();
             plate.increaseFood(feed);
             plate.info();
+
         } while (feed !=0);
     }
 }
